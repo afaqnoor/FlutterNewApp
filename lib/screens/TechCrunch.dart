@@ -146,7 +146,7 @@ class HomePage extends StatelessWidget {
                         _showAlertDialog(context);
                       },
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -188,6 +188,8 @@ class HomePage extends StatelessWidget {
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           text(0,
                                               data: snapshot.data![index]
@@ -195,32 +197,22 @@ class HomePage extends StatelessWidget {
                                                   'Not Available',
                                               color: Colors.black,
                                               size: 15),
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                text(
-                                                  0,
-                                                  data: snapshot.data![index]
-                                                          ['source']['id'] ??
-                                                      'Nill',
-                                                  color: Colors.blueAccent,
-                                                  size: 15,
-                                                  Bold: FontWeight.bold,
-                                                ),
-                                                text(
-                                                  0,
-                                                  data: date,
-                                                  color: Colors.black,
-                                                  size: 15,
-                                                  Bold: FontWeight.bold,
-                                                )
-                                              ],
-                                            ),
+                                          text(
+                                            0,
+                                            data: snapshot.data![index]
+                                                    ['source']['id'] ??
+                                                'Nill',
+                                            color: Colors.blueAccent,
+                                            size: 15,
+                                            Bold: FontWeight.bold,
                                           ),
+                                          text(
+                                            0,
+                                            data: date,
+                                            color: Colors.black,
+                                            size: 15,
+                                            Bold: FontWeight.bold,
+                                          )
                                         ],
                                       ),
                                     ),

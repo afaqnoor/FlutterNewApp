@@ -70,12 +70,12 @@ class ExampleSidebarX extends StatelessWidget {
             child: SizedBox(
               height: 100,
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.only(top: 36.0),
                 child: text(
                   0,
                   data: 'The News',
                   color: canvasColor,
-                  size: 40,
+                  size: 30,
                   Bold: FontWeight.bold,
                 ),
                 //Image.asset('assets/MyTime.png'),

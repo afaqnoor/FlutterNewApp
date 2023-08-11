@@ -78,16 +78,16 @@ class Landing extends StatelessWidget {
                     0,
                     data: 'Top Headlines',
                     color: Colors.black,
-                    size: 30,
+                    size: 25,
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 15,
                   ),
                   Top(),
                   SizedBox(
-                    height: 20,
+                    height: 15,
                   ),
-                  text(0, data: 'Tech News', color: Colors.black, size: 30),
+                  text(0, data: 'Tech News', color: Colors.black, size: 25),
                   HomePage()
                 ],
               ),

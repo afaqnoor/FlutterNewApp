@@ -15,7 +15,7 @@ class Top extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return SizedBox(
-              height: 230,
+              height: 150,
               width: double.infinity,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -29,8 +29,8 @@ class Top extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                                height: 200,
-                                width: 200,
+                                height: 180,
+                                width: 180,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   color: Colors
@@ -64,7 +64,7 @@ class Top extends StatelessWidget {
           } else {
             //final List<dynamic> ratedMovies = snapshot.data!;
             return SizedBox(
-              height: 230,
+              height: 180,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: snapshot.data!.length,
@@ -91,6 +91,8 @@ class Top extends StatelessWidget {
                                     title: Image.network(
                                       snapshot.data![index]['urlToImage'] ??
                                           'loading',
+                                      color: Colors.black26,
+                                      colorBlendMode: BlendMode.darken,
                                     ),
                                     //contentTextStyle: ,
                                     content: text(

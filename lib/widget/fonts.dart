@@ -17,7 +17,7 @@ class text extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(data,
-        style: GoogleFonts.bitter(
+        style: GoogleFonts.preahvihear(
           color: color,
           fontSize: size,
           fontWeight: Bold,
